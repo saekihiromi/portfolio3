@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+html {
+	overflow-y: scroll;
+	/* IEへの対応 http://www.htmq.com/style/overflow-y.shtml */
+	/*Internet Explorerが独自に追加したプロパティ*/
+	/*画面に収まりきれなかったときにスクロールして表示することを許可するか否か*/
+}
+
+/* リセットおまじない--------------------------------- */
+
+body, h1, h2, h3, h4, h5, p, ul, ol, li, dl, dt, dd {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background: #fff;
+	text-align: center;
+	font-size: 16px;
+	line-height: 1.4;
+	min-width: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	outline: none;
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	border: 0px;
+	vertical-align: bottom;
+}
+
+/* --------------------------------------------------- */
+
+body {
+	font-family: "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", "Meiryo", "HGPｺﾞｼｯｸM", "Osaka", "ＭＳ Ｐゴシック", sans-serif, Century Gothic, Arial;
+}
+
+header{
+    background-color: #efa258;
+    height: 80px ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo{
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.link-set{
+    display: flex;
+    justify-content: space-around;
+}
+.link{
+    color: #fff;
+    margin: 0 10px 0 10px;
+}
+
+.top-img{
+    max-width: 100%;
+}
+
+.main{
+    align-items: center;
+    height: auto;
+}
+.main-top-text{
+    font-size: 31px;
+    margin: 50px 0 25px 0;
+}
+.main-img{
+    width: 40%;
+}
+
+.explanation{
+    margin: 0 10% 0 10%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+@media screen and (max-width: 800px) {
+    .explanation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+}
+
+
+.explanation-text{
+    max-width: 45%;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 5%;
+}
+
+button{
+    color: #fff;
+    background-color: #efa258;
+    border: none;
+    border-radius: 10px;
+    height: 47px;
+    width: 197px;
+    margin: 10%;
+}
+
+footer{
+    color: #fff;
+    background-color: #efa258;
+    text-align: center;
+    height: 100px;
+    font-size: 14px;
+}
+
+.logo{
+    color: #fff;
+    font-size: 28px;
+    padding-top: 20px;
+}
